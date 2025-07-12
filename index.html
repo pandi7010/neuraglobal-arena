@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="icon" href="https://img.freepik.com/premium-vector/augmented-reality-virtual-reality-headset-person-flat-icon-black-outlines-vector-illustration_636653-15.jpg">
+    <!-- AOS Animation CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <style>
         :root {
             --primary-blue: #2563EB;
@@ -738,14 +741,15 @@
   </div>
 </section>
 
-<!-- Founder Section (Single Founder) -->
-<section id="founder" class="section">
+<!-- Founder Section (Animated) -->
+<section id="founder" class="section bg-light py-5">
   <div class="container">
-    <div class="text-center mb-5">
+    <div class="text-center mb-5" data-aos="fade-down">
       <h2 class="display-4 mb-3"><span class="section-title">Founder</span></h2>
       <p class="lead text-muted">The visionary behind our immersive learning revolution</p>
     </div>
-    <div class="row justify-content-center">
+
+    <div class="row justify-content-center" data-aos="zoom-in">
       <div class="col-lg-4 col-md-6">
         <div class="card border-0 shadow-sm h-100">
           <div class="card-body p-4 text-center">
@@ -762,19 +766,19 @@
         </div>
       </div>
     </div>
+
     <!-- Founding Story -->
     <div class="row mt-5 pt-5">
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="fade-right">
         <h3 class="mb-4">My Story</h3>
         <p class="lead">When sadness turned into purpose.</p>
         <p>Neura Global | ARena was founded on <strong>11 July 2025</strong>, on a day when my close friends and I were deeply saddened by the skill gap in engineering education. That emotional moment sparked a powerful decision—I initiated this startup to make a real change.</p>
         <p>ARena is more than just a platform; it's a mission to empower students with real practical experience using immersive AR/VR technology. Today, our journey has begun to rewrite how the world sees engineering education.</p>
         <a href="https://www.linkedin.com/in/pandiselvam-r/" class="btn btn-primary mt-3">Read My Full Story</a>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="fade-left">
         <div class="card border-0 shadow-sm overflow-hidden">
-          <img src="logo.png" 
-               class="img-fluid" alt="Team working on VR project">
+          <img src="logo.png" class="img-fluid" alt="Team working on VR project">
           <div class="card-footer bg-white small text-muted">
             NEURA GLOBAL | ARena founded on July 11, 2025
           </div>
@@ -783,6 +787,7 @@
     </div>
   </div>
 </section>
+
 
     <!-- CTA Section -->
     <section id="contact" class="section bg-light">
@@ -935,5 +940,11 @@
         window.addEventListener('scroll', animateOnScroll);
         window.addEventListener('load', animateOnScroll);
     </script>
+    <!-- AOS Animation JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
