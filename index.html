@@ -388,7 +388,7 @@
 
     <div class="row align-items-center">
       <div class="col-lg-6">
-        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80"
+        <img src="https://cdn-icons-gif.flaticon.com/15557/15557809.gif"
              alt="AR/VR Solution" class="img-fluid rounded shadow-sm">
       </div>
       <div class="col-lg-6">
@@ -737,89 +737,7 @@
     </div>
   </div>
 </section>
-<!-- Partnerships Section -->
-<section id="partnerships" class="section bg-white py-5">
-  <div class="container text-center">
-    <h2 class="display-5 mb-4"><span class="section-title">Our Ecosystem Partners</span></h2>
-    <p class="lead text-muted mb-4">Collaborating with global and national leaders to reimagine learning</p>
 
-    <div class="row justify-content-center g-4">
-      <div class="col-4 col-md-2">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="img-fluid" alt="Apple">
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Meta_Platforms_Inc._logo.svg" class="img-fluid" alt="Meta">
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="img-fluid" alt="Google">
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" class="img-fluid" alt="Microsoft">
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Unity_Technologies_logo.svg" class="img-fluid" alt="Unity">
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/NVIDIA_logo.svg" class="img-fluid" alt="NVIDIA">
-      </div>
-    </div>
-
-    <div class="row justify-content-center g-4 mt-4">
-      <div class="col-4 col-md-2">
-        <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Tata_Consultancy_Services_Logo.svg" class="img-fluid" alt="TCS">
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Infosys_logo.svg" class="img-fluid" alt="Infosys">
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Byju%27s_logo.svg" class="img-fluid" alt="BYJU'S">
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="https://upload.wikimedia.org/wikipedia/en/8/83/NASSCOM_logo.svg" class="img-fluid" alt="NASSCOM">
-      </div>
-    </div>
-  </div>
-</section>
-    <!-- Revenue Model Chart Section -->
-<section id="revenue-model" class="section bg-light py-5">
-  <div class="container text-center">
-    <h2 class="display-5 mb-4"><span class="section-title">Revenue Model</span></h2>
-    <p class="lead text-muted">Estimated earnings based on institutional and student onboarding</p>
-    <canvas id="revenueChart" height="300"></canvas>
-  </div>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-  const ctx = document.getElementById('revenueChart').getContext('2d');
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['India - Min', 'India - Max', 'Global - Min', 'Global - Max'],
-      datasets: [{
-        label: 'Annual Revenue (INR Cr)',
-        data: [6, 15, 41, 125],
-        backgroundColor: ['#0d6efd', '#198754', '#6f42c1', '#dc3545']
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: { display: false },
-        tooltip: { callbacks: { label: (ctx) => `₹${ctx.raw} Cr` } }
-      },
-      scales: {
-        y: {
-          beginAtZero: true,
-          title: {
-            display: true,
-            text: 'Revenue (in Crores INR)'
-          }
-        }
-      }
-    }
-  });
-</script>
 <!-- Founder Section (Single Founder) -->
 <section id="founder" class="section">
   <div class="container">
